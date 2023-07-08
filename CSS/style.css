@@ -119,6 +119,44 @@ header {
     margin: 0;
 }
 
+.about-content {
+    display: grid;
+    grid-gap: 10rem;
+    grid-template-columns: 1fr 1fr;
+    padding: 0rem 10rem;
+}
+
+.about-content-main-details-paragraf {
+    font-size: 1.8rem;
+    color: #666;
+    max-width: 60rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.about-btn-contact {
+    padding: 1.5rem 5rem;
+    font-size: 1.6rem;
+}
+
+.about .skills {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -1.2rem;
+}
+
+.about .skill {
+    background-color:rgba(153,153,153,.2);
+    color: #666;
+    padding: 1rem 2rem;
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    border-radius: 5px;
+
+}
+
+
 /* projects */
 
 
@@ -185,11 +223,25 @@ a {
 }
 
 hr {
-    width: 5%;
+    width: 3%;
     color: #7843e9;
     height: 0.5rem;
     border-radius: 10px;
     background-color: #7843e9;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+}
+
+.sec-pad {
+    padding: 12rem 0;
+}
+
+.main-container-header{
+    margin-bottom: 11rem;
 }
 
 /* transforms */
