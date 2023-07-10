@@ -1,4 +1,5 @@
 /* header */
+
 header {
     background: #fff;
     z-index: 1000;
@@ -12,20 +13,60 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.5rem 5rem;
+    padding: 1rem 5rem;
 }
 
 .header-links {
-    display: flex;
     list-style: none;
     font-size: 1.6rem;
+}
+
+
+@media (max-width: 55em) {
+  
+    .header-links {
+        display: none;
+      }
+    
+    .header-menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 1.7rem;
+    }
+    
+    .header-menu-toggle::before {
+        content: "\2630"; /* Відображає значок "гамбургера" */
+    }
+    
+    .header-menu-toggle.active::before {
+        content: "\2715"; /* Відображає значок "хрестик" */
+    }
+    
+    .header-links-active {
+        display: none;
+    }
+
+    
+    .header-links-active.active {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 55em) {
+    .header-links {
+      display: flex;
+    } 
+
+    .header-links-active {
+        display: none;
+    }
 }
 
 .header-logo {
     font-size: 1.8rem;
 }
 
-.header-content a {
+header a {
     color: #333;
     letter-spacing: 1px;
     font-weight: 700;
@@ -34,7 +75,25 @@ header {
     transition: color .3s;
 }
 
+.header-links-active {
+    list-style: none;
+}
 
+.header-link-active-wrapper{
+    text-decoration: none;
+    padding: 1.3rem 2.5rem;
+    font-size: 1.6rem;
+    color: #333;
+    border-top: 1px solid #eee;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: color .3s;
+    text-align: right;
+}
+/* .header-menu-mobile{
+    -webkit-box-shadow: 0 5px 5px 0 rgba(0,0,0,.1);
+} */
 
 /* home */
 .home {
@@ -83,6 +142,13 @@ header {
 
 /*      home social */
 
+@media only screen and (max-width: 56.25em) {
+    .home-social {
+        display: none;
+    }
+}
+
+
 .home-socials {
     background-color: #fff;
     position: absolute;
@@ -121,8 +187,14 @@ header {
 .about-content {
     display: grid;
     grid-gap: 10rem;
-    grid-template-columns: 1fr 1fr;
     padding: 0rem 10rem;
+}
+
+@media only screen and (min-width: 55em) {
+    .about-content {
+        grid-template-columns: 1fr 1fr;
+        padding: 0rem 10rem;
+    }
 }
 
 .about-content-main-details-paragraf {
@@ -166,10 +238,24 @@ header {
 
 .project-row{
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    grid-gap: 5rem;
-    margin-bottom: 11rem;
     padding: 0rem 10rem;
+}
+
+@media only screen and (max-width: 50em) {
+    .project-row {
+        text-align: center;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        margin-bottom: 8rem;
+    }
+}
+
+@media only screen and (min-width: 50em) {
+    .project-row {
+        grid-template-columns: 1.5fr 1fr;
+        grid-gap: 5rem;
+        margin-bottom: 11rem;
+    }
 }
 
 .project-row-image{
