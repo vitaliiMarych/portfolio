@@ -40,8 +40,9 @@ header {
 .home {
     height: 100vh;
     background-image: url(../images/svg/common-bg.svg);
-    /* opacity: 75%; */
     position: relative;
+    min-height: 80rem;
+    max-height: 120rem;
 }
 
 /*      home content */
@@ -90,8 +91,6 @@ header {
     padding: 0.5rem;
     box-shadow: rgba(100,100,111,.2) 0 7px 29px 0;
     border-radius: 5%;
-
-
 }
 
 .home-social{
@@ -190,13 +189,74 @@ header {
     font-size: 1.6rem;  
 }
 
-/* contact */
+/* footer */
+
+.footer {
+    background: #000;
+    color: #fff;
+}
+
+.footer .main-container {
+        max-width: 120rem;
+        margin: auto;
+        width: 92%;
+}
+
+.main-footer-upper{
+    display: flex;
+    justify-content: space-between;
+    padding: 8rem 0;
+}
+
+
+.main-footer-row-1{
+    order: 2;
+}
+
+.main-footer-row-2{
+    width: 40%;
+    order: 1;
+    max-width: 50rem;
+}
+
+.heading-sm {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.main-footer-short-desc {
+    margin-top: 2rem;
+    color: #eee;
+    font-size: 1.5rem;
+    line-height: 1.7;
+}
+
+.main-footer-social-cont {
+    margin-top: 2rem;
+  }
+
+.main-footer-icon {
+    margin-right: 1rem;
+    width: 2.5rem;
+    filter: invert(100%);
+}
+
+.main-footer-lower {
+    padding: 4rem 0;
+    border-top: 1px solid #444;
+    color: #eee;
+    font-size: 1.2rem;
+    text-align: center;
+  }
 
 /* general */
 
 html {
-    font-size: 59%;
+    font-size: 59%; 
 }
+
+
 
 body {
     box-sizing: border-box;
@@ -214,6 +274,7 @@ a {
     text-transform: uppercase;
     text-decoration: none;
     font-family: inherit;
+    color: #fff;
 }
 
 .btn {
@@ -269,6 +330,10 @@ h3 {
 .sec-pad {
     padding: 12rem 0;
 }
+
+@media only screen and (max-width: 56.25em) {
+    .sec-pad {
+      padding: 8rem 0; } }
 
 .main-container-header{
     margin-bottom: 8rem;
