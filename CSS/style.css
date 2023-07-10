@@ -159,6 +159,36 @@ header {
 
 /* projects */
 
+.project{
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.project-row{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-gap: 5rem;
+    margin-bottom: 11rem;
+    padding: 0rem 10rem;
+}
+
+.project-row-image{
+    width: 100%;
+}
+
+.project-row-content-desc{
+    font-size: 1.8rem;
+    color: #666;
+    max-width: 60rem;
+    line-height: 1.7;
+    margin-bottom: 3rem;
+}
+
+.project-btn-project {
+    padding: 1.5rem 5rem;
+    font-size: 1.6rem;  
+}
 
 /* contact */
 
@@ -241,7 +271,7 @@ h3 {
 }
 
 .main-container-header{
-    margin-bottom: 11rem;
+    margin-bottom: 8rem;
 }
 
 /* transforms */
